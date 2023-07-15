@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["stack_trace","Get a stack trace using the default stack tracer based on DWARF debug info. "]]});
+window.SIDEBAR_ITEMS = {"fn":["get_my_current_task","stack_trace"],"struct":["CrateNamespace"],"type":["StrongSectionRef"]};

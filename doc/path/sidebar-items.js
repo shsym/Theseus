@@ -1,1 +1,1 @@
-initSidebarItems({"constant":[["EXTENSION_DELIMITER",""],["PATH_DELIMITER",""]],"enum":[["PathComponent",""]],"struct":[["Path","A structure that represents a file  "]]});
+window.SIDEBAR_ITEMS = {"constant":["EXTENSION_DELIMITER","PATH_DELIMITER"],"enum":["PathComponent"],"struct":["Path"]};

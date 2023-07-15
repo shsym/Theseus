@@ -158,7 +158,7 @@
 </ol>
 <p>The first two steps were <a href="tlibc.html">described previously</a>; the latter two are described below.</p>
 <p>To build and link a dummy C program to tlibc, the invocation of <code>gcc</code> currently requires several arguments to customize the compiler's behavior as well as its usage of the <code>ld</code> linker. The key arguments are shown and described below:</p>
-<pre><code class="language-sh">x86_64-elf-gcc -o dummy_works              \
+<pre><code class="language-sh">x86_64-elf-gcc                             \
     -mno-red-zone -nostdlib -nostartfiles  \
     -ffunction-sections -fdata-sections    \
     -mcmodel=large                         \
@@ -186,7 +186,6 @@ Using those sections would result in multiple copies of data that's supposed to 
 This only applies for sections that already exist in Theseus; references to new sections that are unique to the executable are kept intact, of course.
 The relocation information is encoded into the ELF file itself as standard <code>.rela.*</code> sections via the <code>--emit-relocs</code> linker argument shown above.</p>
 <p>This procedure is currently performed by the <code>loadc</code> application; it also handles loading the ELF executable segments (program headers) and managing their metadata. </p>
-<!-- cspell:ignore crtbegin, crtend, fdata, ffunction, mcmodel, nostartfiles, nostdlib   -->
 
                     </main>
 

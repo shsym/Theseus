@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["PerCpuField"],"fn":["hold_preemption","init","preemption_enabled"],"struct":["CpuLocal","PreemptionCount","PreemptionGuard"],"trait":["CpuLocalField"]};

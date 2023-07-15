@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":["arch"],"struct":["InterruptDestination"],"trait":["LocalInterruptControllerApi","SystemInterruptControllerApi"]};
